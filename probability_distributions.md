@@ -13,3 +13,5 @@ Wahrscheinlichkeitsverteilungen sind Zuordnungen von Zustandsvektoren $\vec x \i
 Sowohl diskrete als auch kontinuierliche Wahrscheinlichkeitsverteilungen haben **eine sog. cummultive Distribution Funktion CDF**, die die Wahrscheinlichkeiten für "alle vorherigen" und den aktuellen Zustand aufsummiert. Sie startet also mit dem "kleinsten" Zustand bei 0 und endet beim "größten" Zustand bei 1. Sie gibt also die Wahrscheinlichkeit an, für einen der "kleineren oder des gewählten Zustandes x" an. **Sie hängt also stark von der "Ordnung" der Zustände ab.**   
 
 **Die Summe oder das Integral über alle Zustände der Zufallsvariable muss 1 ergeben und jede Einzelzustandsvariable muss größer gleich 0 sein.** 
+
+Der Punkt an dem das Maximum der PMF oder PDF ist heißt Mode. 
