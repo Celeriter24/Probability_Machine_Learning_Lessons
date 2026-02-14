@@ -14,4 +14,28 @@ Sowohl diskrete als auch kontinuierliche Wahrscheinlichkeitsverteilungen haben *
 
 **Die Summe oder das Integral über alle Zustände der Zufallsvariable muss 1 ergeben und jede Einzelzustandsvariable muss größer gleich 0 sein.** 
 
-Der Punkt an dem das Maximum der PMF oder PDF ist heißt Mode. 
+## Erwartungswert und Varianzen
+
+Der Erwartungswert einer Funktion f (oder auch Wahrscheinlichkeitsverteilung die eine Funktion ist) ist der wahrscheinlichkeits gewichter Wert der Funktion.
+
+$\mathbf E(f) = \Sigma_x p(x)*f(x) $ oder kontinuierlich $= \int_x p(x)*f(x) dx$ 
+
+Note: Für $\lim_{N \rightarrow \infin}: $$\mathbf E(f) = 1/N * \Sigma_{n=1}^N f(x_n)$
+
+Geht auch natürlich für mehrdimensionale Funktionen, wobei die "marginalisierte" Variable angegeben werden muss.
+
+$\mathbf E_x(f(x,y)) = g(y) $
+
+Der Erwartungswert ist linear in Skalaren und unter Summen kombinierbar/dekombinierbar (1). 
+
+Die Varianz innerhalb einer Variable ist definiert als 
+
+$var(f) = \mathbf E[f(x)^2-\mathbf E(f(x)]^2 =^{1} \mathbf E[f(x)^2]-\mathbf E[(f(x)]^2 $
+
+Die Covarianz zwischen 2 Variablen ist definiert als 
+
+$cov(x,y) =\mathbf E_{x,y}[(x-\mathbf E(x))(y-\mathbf E(y))] = \mathbf E_{x,y}(x,y)-\mathbf E (x)*\mathbf E (y)$ gibt an in welcher Weise sich x und y zusammen verändern. 
+
+Seien $\vec x$ und $\vec y$ Vektoren von Zuständen, so:
+
+$cov(\vec x,\vec y) =\mathbf E_{\vec x,\vec y}[(\vec x-\mathbf E(x))(\vec y^T-\mathbf E(\vec y^T))] = \mathbf E_{\vec x,\vec y}(\vec x,\vec y^T)-\mathbf E (\vec x)*\mathbf E (\vec y^T)$ 
