@@ -1,4 +1,4 @@
-# Probability_Machine_Learning_Lessons
+# Probability Machine Learning Lessons
 An incomplete set of PML methods explained
 
 This is mainly a resource for me and my understanding of PML in German. 
